@@ -111,8 +111,8 @@ def main():
             # if it's close to market close time, then BUY (only if we don't have any opened positions)
             if round((close_at-time_now).total_seconds()) < TIME_BUFFER and not list_positions():
                 logging.info(buy_close(SYMBOL))
-            # if it's close to market open time, then SELL (if we have open positions)
-            if round((time_now-open_at).total_seconds()) < TIME_BUFFER:
+            # if it's right after the market open time, then SELL (if we have open positions)
+            if round((time_now-open_at).total_seconds()) < TIME_BUFFER and list_positions():
                 logging.info(sell_open(SYMBOL))
         else:
             logging.warning(f"Cannot get the last 15-minute delayed price for {SYMBOL}!")
