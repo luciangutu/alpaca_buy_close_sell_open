@@ -4,7 +4,7 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockLatestQuoteRequest
 from dateutil.tz import tzlocal
-from datetime import datetime, timezone, timedelta
+from datetime import datetime
 import dateutil.relativedelta
 import config
 import logging
