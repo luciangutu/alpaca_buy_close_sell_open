@@ -1,5 +1,5 @@
 # alpaca_buy_close_sell_open
-Alpaca broker buy close/sell open strategy
+Alpaca broker buy close/sell open strategy - WIP
 
 Create config.py and fill the API keys from https://app.alpaca.markets/ (https://alpaca.markets/learn/connect-to-alpaca-api/)
 ```angular2html
